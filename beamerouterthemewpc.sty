@@ -11,6 +11,7 @@
 {
 	\vfill
 	\begin{centering}
+		\vskip2em
 		\begin{beamercolorbox}[center, rounded=true]{title}
 			\usebeamerfont{title}\inserttitle\par%
 			\ifx\insertsubtitle\@empty%
@@ -26,22 +27,22 @@
 			\usebeamerfont{author}\insertauthor
 		\end{beamercolorbox}
 
-		\vskip1em
+		%\vskip1em
 
 		{\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
-		\begin{beamercolorbox}[sep=8pt,center,#1]{institute}
+		\begin{beamercolorbox}[sep=2pt,center,#1]{institute}
 			\usebeamerfont{date}\insertinstitute
 		\end{beamercolorbox}
 
-		\vskip1em
+		%\vskip1em
 
-		\begin{beamercolorbox}[sep=8pt,center,#1]{date}
+		\begin{beamercolorbox}[sep=2pt,center,#1]{date}
 			\usebeamerfont{date}\insertdate
 		\end{beamercolorbox}
 	\end{centering}
 	\vfill
 }
-\titlegraphic{\includegraphics[width=3in]{asuwpc_rgb}}
+\titlegraphic{\includegraphics[width=2in]{asuwpc_rgb}}
 
 % footer styling
 \setbeamercolor{title in footer}{fg=white,bg=asumaroon}
@@ -51,16 +52,16 @@
 {%
   \ifnum\c@framenumber=1
   \else
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in footer}%
-    \inserttitle
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{pagenumber in footer}%
-   \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
-  \end{beamercolorbox}}%
-  \vskip0pt%
-  fi%
+	  %\leavevmode%
+	  \hbox{%
+	  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{title in footer}%
+	    \hspace*{2ex} \insertshorttitle
+	  \end{beamercolorbox}%
+	  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{pagenumber in footer}%
+	   \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+	  \end{beamercolorbox}}%
+	  \vskip0pt%
+  \fi%
 }
 
 \setbeamersize{text margin left=1em,text margin right=1em}
