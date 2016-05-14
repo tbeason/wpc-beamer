@@ -19,26 +19,25 @@
 \setbeamercolor{title}{fg=asumaroon}
 
 % set colors for specific elements
-\setbeamercolor{block}{fg=asugold}
-\setbeamercolor{block title}{fg=asugold} % adjust title color to poppy
-\setbeamercolor{block item}{fg=asugold}
+\setbeamercolor{block}{fg=asumaroon}
+\setbeamercolor{block title}{fg=white} % adjust title color to poppy
+\setbeamercolor{block item}{fg=white}
 \setbeamercolor{itemize item}{fg=asugold} % adjusts the bullet color
 
 % frame title styling
-\setbeamertemplate{frametitle}{\vspace{0.4cm} \color{white}  \insertframetitle}
+\setbeamertemplate{frametitle}{ \color{asumaroon}  \insertframetitle}
 
 \usesubitemizeitemtemplate{%
-    \tiny\raise1.5pt\hbox{\color{beamerstructure}$\blacktriangleright$}%
-}
-\usesubsubitemizeitemtemplate{%
-    \tiny\raise1.5pt\hbox{\color{beamerstructure}$\bigstar$}%
+    \tiny\raise1.5pt\hbox{\color{asugold}$\blacktriangleright$}%
 }
 
+% show future items
+\setbeamercovered{transparent}
 
 \setbeamersize{text margin left=1em,text margin right=1em}
 %\setbeamersize{frametitle=\huge}
 
-\ifbeamer@secheader\else\setbeamertemplate{headline}[default]\fi
+%\ifbeamer@secheader\else\setbeamertemplate{headline}[default]\fi
 
 \mode
 <all>

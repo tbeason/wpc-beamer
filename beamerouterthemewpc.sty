@@ -44,15 +44,34 @@
 }
 \titlegraphic{\includegraphics[width=2in]{asuwpc_rgb}}
 
+
+
+% header styling
+\setbeamercolor{section in header}{fg=asumaroon,bg=white}
+
+\defbeamertemplate*{headline}{wpc}
+{%
+	\ifnum\c@framenumber=1
+	\else
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,right]{section in header}%
+			 \insertsectionhead \hspace*{2ex}
+		\end{beamercolorbox}}%
+	\fi%
+}
+
+
+
 % footer styling
 \setbeamercolor{title in footer}{fg=white,bg=asumaroon}
 \setbeamercolor{pagenumber in footer}{fg=white,bg=asumaroon}
 
-\defbeamertemplate*{footline}{wpctheme}
+\defbeamertemplate*{footline}{wpc}
 {%
   \ifnum\c@framenumber=1
   \else
-	  %\leavevmode%
+	  \leavevmode%
 	  \hbox{%
 	  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{title in footer}%
 	    \hspace*{2ex} \insertshorttitle
@@ -65,6 +84,9 @@
 }
 
 \setbeamersize{text margin left=1em,text margin right=1em}
+
+% suppress navigation bar
+\beamertemplatenavigationsymbolsempty
 
 \mode
 <all>

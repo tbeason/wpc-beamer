@@ -1,64 +1,52 @@
 % This program can be redistributed and/or modified under the terms
 % of the GNU Public License, version 3.
-%
-% Seth Brown, Ph.D.
-% sethbrown@drbunsen.org
-%
-% Compiled with XeLaTeX
-% Dependencies:
-%   Fontin Sans font (http://www.exljbris.com/fontinsans.html)
-%
+
 \documentclass{beamer}
 
 \usepackage{graphicx} % graphics
-\usepackage{epsfig} % eps graphics
 \usepackage{hyperref} % urls
-\usepackage{booktabs, caption} % table styling
 
-% suppress navigation bar
-\beamertemplatenavigationsymbolsempty
+
 
 \mode<presentation>
 {
   \usetheme{wpc}
-  \setbeamercovered{transparent}
-  \setbeamertemplate{items}[circle]
 }
 
 
-
-% color definitions
-\usepackage{color}
-\definecolor{asumaroon}{RGB}{140,29,64}
-\definecolor{uiblack}{RGB}{0, 0, 0}
-
-% title slide definition
+% titlepage information
 \title[WPC Example]{WPC Example: Accompanied by an Unnecessarily Long Title for Testing Purposes}
 \author{Tyler Beason}
+\institute[]{} %probably not needed because of the picture
 \date{\today}
 
-%--------------------------------------------------------------------
-%                           Introduction
-%--------------------------------------------------------------------
-
+% DOCUMENT BEGIN
 \begin{document}
-
-\section{Introduction}
 
 \begin{frame}
 \titlepage
 \end{frame}
 
-%-------------------------------------------------------------------
-%                          Section 1
-%-------------------------------------------------------------------
 
+\begin{frame}{Introduction}
 
-\section{Preliminary findings}
-\begin{frame}
-	\frametitle{title test}
-test
+No special commands needed when creating the presentation.
 
 \end{frame}
 
+\section{Model}
+\begin{frame}{Example}
+	
+\begin{itemize}
+	\item test 1 
+	\begin{itemize}
+		\item test 1.1
+	\end{itemize}
+	\pause 
+	\item test 2
+\end{itemize}
+	
+\end{frame}
+
+% DOCUMENT END
 \end{document}
