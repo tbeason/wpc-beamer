@@ -5,6 +5,13 @@ This repo contains the LaTeX Beamer template I've created my own use at the W.P.
 
 I tried to stay as true as I could to the ASU Brand Marketing guidelines, using the official shades of maroon and gold, along with the sanctioned ASU WPC logo.
 
+#### Features
+* ASU WPC logo always centered on title page
+* Short title placed in bottom left footer
+* Page numbers in bottom right footer
+* Section headings in upper right header
+* Minimal other distractions
+
 #### Usage
 
 There are two ways to use this theme. The first is to simply place the files in the folder of your TeX document. This can be done by clicking Download ZIP above or by cloning the repository using GitHub.
