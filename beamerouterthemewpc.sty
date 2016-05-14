@@ -11,7 +11,9 @@
 \setbeamercolor{pagenumber in footer}{fg=white,bg=asumaroon}
 
 \defbeamertemplate*{footline}{wpctheme}
-{
+{%
+  \ifnum\c@framenumber=1
+  \else
   \leavevmode%
   \hbox{%
   \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in footer}%
@@ -21,6 +23,7 @@
    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
   \end{beamercolorbox}}%
   \vskip0pt%
+  fi%
 }
 
 \setbeamersize{text margin left=1em,text margin right=1em}
