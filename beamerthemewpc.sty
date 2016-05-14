@@ -1,0 +1,43 @@
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 3.
+
+\mode<presentation>
+
+\newif\ifbeamer@secheader
+\beamer@secheaderfalse
+
+\DeclareOptionBeamer{secheader}{\beamer@secheadertrue}
+\ProcessOptionsBeamer
+
+\useoutertheme{wpc}
+
+% color definitions
+\definecolor{asumaroon}{RGB}{140,29,64}
+\definecolor{asugold}{RGB}{255,198,39}
+
+% set the title color
+\setbeamercolor{title}{fg=asumaroon}
+
+% set colors for specific elements
+\setbeamercolor{block}{fg=asumaroon}
+\setbeamercolor{block title}{fg=white} % adjust title color to poppy
+\setbeamercolor{block item}{fg=white}
+\setbeamercolor{itemize item}{fg=asugold} % adjusts the bullet color
+
+% frame title styling
+\setbeamertemplate{frametitle}{ \color{asumaroon}  \insertframetitle}
+
+\usesubitemizeitemtemplate{%
+    \tiny\raise1.5pt\hbox{\color{asugold}$\blacktriangleright$}%
+}
+
+% show future items
+\setbeamercovered{transparent}
+
+\setbeamersize{text margin left=1em,text margin right=1em}
+%\setbeamersize{frametitle=\huge}
+
+%\ifbeamer@secheader\else\setbeamertemplate{headline}[default]\fi
+
+\mode
+<all>
