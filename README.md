@@ -13,6 +13,6 @@ To clone the repository, navigate to your working directory and use
 ```bash
 $ git clone git@github.com:tbeason/wpc-beamer.git
 ```
-In the preamble of your presentation, remember to set the theme with ``\usetheme{wpc-beamer/wpc}`` (or if you did not place them in their own folder) ``\usetheme{wpc``.
+In the preamble of your presentation, remember to set the theme with ``\usetheme{wpc-beamer/wpc}`` (or if you did not place them in their own folder) ``\usetheme{wpc}``.
 
 The second way to use the theme is to place them where MiKTeX can see them and then refresh its FNDB. Follow these [instructions](http://docs.miktex.org/faq/faq.html#styfiles).
