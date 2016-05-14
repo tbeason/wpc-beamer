@@ -1,7 +1,7 @@
 TeX Beamer Template
 ---
 
-This repo contains the LaTeX Beamer template I've created my own use at the W.P. Carey School of Business. It is a modified version of [this Beamer theme](http://www.drbunsen.org/custom-beamer-theme.html) created by Seth Brown.
+This repo contains the LaTeX Beamer template I've created for my own use at the W.P. Carey School of Business. It is a modified version of [this Beamer theme](http://www.drbunsen.org/custom-beamer-theme.html) created by Seth Brown.
 
 I tried to stay as true as I could to the ASU Brand Marketing guidelines, using the official shades of maroon and gold, along with the sanctioned ASU WPC logo.
 
