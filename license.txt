@@ -1,5 +1,5 @@
 
-Copyright 2012 Seth Brown, http://www.drbunsen.org/custom-beamer-theme.html
+Copyright 2016 Tyler Beason, http://tbeason.com
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
